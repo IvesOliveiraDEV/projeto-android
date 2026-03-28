@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonte display';
+    src: url(fontes/idroid.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor0: #84e1ad;
+    --cor1: #3BD47F;
+    --cor2: #2FA866;
+    --cor3: #1A5C38;
+    --cor4: #9ee6bdea; 
+    --cor5: #1A5C38;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', Serif;
+    --fonte2: 'fonte display', Times, Serif;
+}
+
+* {
+    line-height: 1.5em;
+}
+
+body {
+   background-color: var(--cor0); 
+}
+header {
+    background-image: linear-gradient(180deg, var(--cor1), var(--cor3));
+    padding-top: 10px;
+}
+header > h1 {
+   text-align: center;
+   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.74);
+   color: whitesmoke;
+   padding-top: 10px;
+}
+header > p {
+    text-align: center;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.582);
+    color: whitesmoke;
+    padding-top: 10px;
+}
+
+nav > a:active{
+    text-decoration: none;
+}
+
+nav.navegacao {
+    font-weight: bold;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+nav > a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 20px;
+}
+nav > a:checked {
+    color: red;
+    text-decoration: none;
+}
+nav > a:hover {
+    background-color: rgba(127, 255, 212, 0.233);
+}
+
+main {
+    min-width: 400px;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.664);
+    margin: auto;
+    padding-left: 10px;
+}
+
+main > span {
+    font-weight: bold;
+    color: var(--cor3);
+}
+
+h2 {
+    padding-top: 10px;
+    
+    font-family: var(--fonte2);
+    color: var(--cor5);
+
+}
+
+h3 {
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    background-color: var(--cor1);
+}
+
+div.bugdroid{
+    max-width: 100%;
+    height: auto; /* Mantém a proporção */
+    display: block;
+    margin: 0 auto;
+}
+
+div.video{
+    position: relative;
+    background-color: var(--cor3);
+    height: 0px;
+    margin-left: -10px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+p {
+    font-family: var(--fonte0);
+}
+
+.lista {
+    width: 500px;
+    height: 600px;
+    background-color: var(--cor4);
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.829);
+    
+}
+
+.extra{
+    background-color: var(--cor2);
+    color: whitesmoke;
+
+    font-size: large;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+.imagem{
+    padding: 100px;
+}
+
+footer {
+    font-style: italic;
+    background-color: var(--cor5);
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer > span {
+    font-weight: bolder;
+}
